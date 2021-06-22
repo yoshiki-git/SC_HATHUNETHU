@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:clickable="true"
+    tools:context=".Log_Interval_Activity">
+
+    <TextView
+        android:id="@+id/tv_whitelist2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/fileSave_explain"
+        android:textColor="@android:color/background_light"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_fileSave" />
+
+    <Switch
+        android:id="@+id/switch_fileSave"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="false"
+        android:text="@string/fileSave"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_optimisation" />
+
+    <Switch
+        android:id="@+id/switch_dozelog"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="false"
+        android:text="@string/doze_logging"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_other_setting" />
+
+    <Switch
+        android:id="@+id/switch_PM"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="true"
+        android:text="@string/logItem_PM"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_time2" />
+
+    <Switch
+        android:id="@+id/switch_NW"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="true"
+        android:text="@string/tv_network"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_PM" />
+
+    <Switch
+        android:id="@+id/switch_SB"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="true"
+        android:text="@string/logItem_SB"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_NW" />
+
+    <Switch
+        android:id="@+id/switch_Bat"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="true"
+        android:text="@string/logItem_Bat"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_SB" />
+
+    <Switch
+        android:id="@+id/switch_Thermal"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:checked="true"
+        android:text="@string/logItem_Thermal"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_Bat" />
+
+    <TextView
+        android:id="@+id/title_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/tv_logItem"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_logInterval"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_time" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="42dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/millisecond"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="変更する"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_other_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/other_setting"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_Thermal" />
+
+    <TextView
+        android:id="@+id/tv_doze_datail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/doze_detail"
+        android:textColor="@android:color/background_light"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_dozelog" />
+
+    <TextView
+        android:id="@+id/tv_whitelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/doze_whielist"
+        android:textColor="@android:color/background_light"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_doze_datail" />
+
+    <Button
+        android:id="@+id/button_optimisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/btn_optimisation"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_whitelist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

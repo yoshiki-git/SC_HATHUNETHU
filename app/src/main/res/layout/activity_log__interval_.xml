@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:layout_marginStart="24sp"
+            android:text="@string/tv_logInterval"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/background_light"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@android:color/background_light" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/millisecond"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/changeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="@string/button_change_interval" />
+
+        </LinearLayout>
+        <Switch
+            android:id="@+id/switch_logTime"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="false"
+            android:text="@string/switch_logtime"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:id="@+id/title_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:text="@string/tv_logItem"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <Switch
+            android:id="@+id/switch_PM"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_PM"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/switch_NW"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/tv_network"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/switch_SB"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_SB"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/switch_Bat"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_Bat"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/switch_Thermal"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_Thermal"
+            android:textColor="@android:color/background_light"/>
+        <TextView
+            android:id="@+id/tv_other_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:text="@string/other_setting"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+        <Switch
+            android:id="@+id/switch_dozelog"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="false"
+            android:text="@string/doze_logging"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:id="@+id/tv_doze_datail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:text="@string/doze_detail"
+            android:textColor="@android:color/background_light"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_whitelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:text="@string/doze_whielist"
+            android:textColor="@android:color/background_light"
+            android:textSize="8sp" />
+        <Button
+            android:id="@+id/button_optimisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:text="@string/btn_optimisation"
+            android:textSize="8sp" />
+        <Switch
+            android:id="@+id/switch_fileSave"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="false"
+            android:text="@string/fileSave"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:id="@+id/tv_whitelist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/fileSave_explain"
+            android:textColor="@android:color/background_light"
+            android:textSize="8sp" />
+    </LinearLayout>
+</ScrollView>

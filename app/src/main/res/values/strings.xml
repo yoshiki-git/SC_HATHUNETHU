@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">発熱アプリ改良版</string>
+    <string name="btn_start">ログSTART</string>
+    <string name="btn_stop">ログSTOP</string>
+    <string name="btn_tether">テザリング画面へ</string>
+    <string name="btn_camera">カメラアプリ起動</string>
+    <string name="btn_thermal">ThermalZone情報</string>
+    <string name="btn_thlog_save">ログとして保存</string>
+    <string name="btn_network">Cell Information</string>
+    <string name="btn_scr_start">SCREEN KEEP ON</string>
+    <string name="btn_scr_stop">SCREEN KEEP OFF</string>
+    <string name="btn_settei">ログの設定</string>
+    <string name="btn_view_settei">ビューの設定</string>
+    <string name="tv_logInterval">測定間隔</string>
+    <string name="tv_logItem">測定項目</string>
+    <string name="logItem_PM">PowerManager(Android10以上)</string>
+    <string name="logItem_Bat">Battery情報</string>
+    <string name="logItem_Thermal">内部温度情報</string>
+    <string name="logItem_Cell">Cell情報</string>
+    <string name="millisecond">ms</string>
+    <string name="tv_network">ネットワーク情報</string>
+    <string name="logItem_SB">画面輝度</string>
+    <string name="other_setting">その他の設定</string>
+    <string name="doze_logging">Dozeモードでログを取る</string>
+    <string name="doze_detail">端末を電源に接続せずに画面を消灯している場合、\n
+        端末はDozeモードに移行し、通常の設定ではログを取ることができない場合があります。</string>
+    <string name="doze_whielist">それでも動作に問題がある場合は、\n
+        以下のボタンより「発熱アプリ」をバッテリーの最適化から除外してください。\n
+    この設定により電池消費量が増加する場合があります。</string>
+    <string name="btn_optimisation">バッテリーの最適化を変更</string>
+    <string name="fileSave">旧保存場所を利用する</string>
+    <string name="fileSave_explain">新規保存場所で保存できない場合に利用してください。
+    内部ストレージの\n"/Android/data/com.example.sc_hathunethu/files"にログが保存されます。</string>
+    <string name="button_change_interval">変更する</string>
+    <string name="switch_logtime">時間の表示を相対値にする</string>
+    <string name="view_start">VIEW START</string>
+    <string name="view_stop">VIEW STOP</string>
+
+    <string name="view_interval">ビューの切り替え間隔</string>
+    <string name="view_item">ビューの表示項目</string>
+    <string name="tv_view_color">ビューの色の設定</string>
+    <string name="item_red">赤</string>
+    <string name="item_blue">青</string>
+    <string name="item_white">白</string>
+    <string name="item_black">黒</string>
+    <string name="item_green">緑</string>
+</resources>

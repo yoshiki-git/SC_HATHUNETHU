@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:layout_marginStart="24sp"
+            android:text="@string/view_interval"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/viewEdit"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/background_light"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@android:color/background_light" />
+            <TextView
+                android:id="@+id/view_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/millisecond"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/viewChangeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="@string/button_change_interval" />
+
+        </LinearLayout>
+        <Switch
+            android:id="@+id/sw_view_Time"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="false"
+            android:text="@string/switch_logtime"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:id="@+id/view_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:text="@string/view_item"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <Switch
+            android:id="@+id/view_PM"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_PM"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/view_NW"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/tv_network"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/view_SB"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_SB"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/view_Bat"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_Bat"
+            android:textColor="@android:color/background_light" />
+
+        <Switch
+            android:id="@+id/view_Thermal"
+            android:layout_width="255dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24sp"
+            android:checked="true"
+            android:text="@string/logItem_Thermal"
+            android:textColor="@android:color/background_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:id="@+id/tv_view_color"
+            android:text="@string/tv_view_color"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"/>
+        <RadioGroup
+            android:id="@+id/radioGroup_view_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24sp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/view_Red"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/item_red"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/background_light"
+                />
+            <RadioButton
+                android:id="@+id/view_Blue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/item_blue"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/background_light"
+                android:layout_marginStart="10sp"
+                />
+            <RadioButton
+                android:id="@+id/view_Green"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/item_green"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/background_light"
+                android:layout_marginStart="10sp"
+
+                />
+            <RadioButton
+                android:id="@+id/view_White"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/item_white"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/background_light"
+                android:layout_marginStart="10sp"
+                />
+            <RadioButton
+                android:id="@+id/view_Black"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/item_black"
+                android:textColor="@android:color/background_light"
+                android:buttonTint="@android:color/background_light"
+                android:layout_marginStart="10sp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
