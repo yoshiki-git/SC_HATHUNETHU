@@ -71,13 +71,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startApplication(){
-        Log.d("TestApp","startApplication()");
+        Log.d(TAG,"startApplication()");
 
         //画面点灯維持にWakeLockを使用
         PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
         final PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK,
                 "MyApp::MyWakelockTag");
-        Log.d("TestApp",wakeLock.toString());
+        Log.d(TAG,wakeLock.toString());
 
 
         //ログのスタート
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("TestApp","onClick");
+                Log.d(TAG,"onClick");
                 Intent intent=new Intent(getApplication(),MyService.class);
                 intent.putExtra("REQUEST_CODE", 1);
                 startForegroundService(intent);
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 stopService(intent3);
                 if(wakeLock.isHeld()) {
                     wakeLock.release();
-                    Log.d("TestApp",wakeLock.toString());
+                    Log.d(TAG,wakeLock.toString());
                 }
                 btn_scr_off.setEnabled(false);
                 btn_scr_on.setEnabled(true);
@@ -287,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == REQUEST_CODE) {
             if (!Settings.canDrawOverlays(this)) {
-                Log.d("debug", "SYSTEM_ALERT_WINDOW permission not granted...");
+                Log.d(TAG, "SYSTEM_ALERT_WINDOW permission not granted...");
                 // SYSTEM_ALERT_WINDOW permission not granted...
                 // nothing to do !
             }
@@ -300,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (Environment.isExternalStorageManager()) {
             //todo when permission is granted
-            Log.d("デバッグ","MANAGE_EXTERNAL_STORAGE is granted");
+            Log.d(TAG,"MANAGE_EXTERNAL_STORAGE is granted");
         } else {
             //request for the permission
             Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);

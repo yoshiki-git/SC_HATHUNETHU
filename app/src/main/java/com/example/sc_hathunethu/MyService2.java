@@ -97,7 +97,7 @@ public class MyService2 extends Service {
         // 10分毎のアラーム設定
         long repeatPeriod = 10*60*1000;
 
-        Intent intent = new Intent(context,MyService.class);
+        Intent intent = new Intent(context,MyService2.class);
 
         long startMillis = System.currentTimeMillis() + repeatPeriod;
 
@@ -114,7 +114,7 @@ public class MyService2 extends Service {
     }
 
     private void stopAlarmService(){
-        Intent indent = new Intent(context, MyService.class);
+        Intent indent = new Intent(context, MyService2.class);
         PendingIntent pendingIntent = PendingIntent.getService(context, 0, indent, 0);
 
         // アラームを解除する
